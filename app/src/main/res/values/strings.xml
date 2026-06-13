@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">HealthSync</string>
+    <string name="tagline">Smart Wellness. Adaptive Nutrition. Predictive Health.</string>
+
+    <!-- Onboarding -->
+    <string name="ob_title_1">AI Health Intelligence</string>
+    <string name="ob_desc_1">Advanced neural networks analyzing your vitals in real-time for personalized wellness.</string>
+    <string name="ob_title_2">Adaptive Nutrition</string>
+    <string name="ob_desc_2">Smart meal scanning and metabolic tracking tailored to your unique biology.</string>
+    <string name="ob_title_3">Disease Prediction</string>
+    <string name="ob_desc_3">Detecting health trends before they become issues using deep diagnostic AI.</string>
+    <string name="ob_title_4">Mood &amp; Stress Tracking</string>
+    <string name="ob_desc_4">Emotional analytics and calming sessions to optimize your mental performance.</string>
+    <string name="ob_title_5">Wellness Optimization</string>
+    <string name="ob_desc_5">Continuous learning engine that evolves with your health journey every day.</string>
+
+    <string name="btn_skip">Skip</string>
+    <string name="btn_next">Next</string>
+    <string name="btn_get_started">Get Started</string>
+
+    <!-- Auth -->
+    <string name="login_welcome">Welcome back</string>
+    <string name="login_subtitle">Enter your details to access your health data.</string>
+    <string name="label_email">Email Address</string>
+    <string name="label_password">Password</string>
+    <string name="hint_email">name@example.com</string>
+    <string name="hint_password">••••••••</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="btn_login">Sign In</string>
+    <string name="or_continue">or continue with</string>
+    <string name="google">Google</string>
+    <string name="apple">Apple</string>
+    <string name="no_account">Don\'t have an account? Sign Up</string>
+    <string name="already_have_account_signin">Already have an account? Sign In</string>
+
+    <string name="signup_title">Create Account</string>
+    <string name="signup_subtitle">Create your account to start your personalized health journey.</string>
+    <string name="label_full_name">Full Name</string>
+    <string name="hint_full_name_signup">Enter your full name</string>
+    <string name="label_confirm_password">Confirm Password</string>
+    <string name="hint_confirm_password">Repeat your password</string>
+    <string name="btn_signup">Create Account</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_nutrition">Smart Diet</string>
+    <string name="nav_wellness">Wellness</string>
+    <string name="nav_community">Community</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Dashboard -->
+    <string name="dummy_date">Wed, 22 May</string>
+    <string name="dummy_user">Hello, saimanoharthummala</string>
+    <string name="ai_insight">AI Insight</string>
+    <string name="ai_insight_desc">Your recovery is looking great! Try to keep the same sleep pattern.</string>
+    <string name="calories">Calories</string>
+    <string name="water">Water</string>
+    <string name="sleep">Sleep</string>
+    <string name="stress">Stress</string>
+    <string name="dummy_calories">1,450 kcal</string>
+    <string name="dummy_water">2.5 Liters</string>
+    <string name="dummy_sleep">7h 20m</string>
+    <string name="dummy_stress">Moderate</string>
+    <string name="weekly_health_score">Weekly Health Score</string>
+    <string name="excellent">Excellent</string>
+    <string name="dummy_score">88</string>
+    <string name="risk_report">Health Risk Report</string>
+    <string name="last_updated">Last updated: May 12, 2024</string>
+    <string name="risk_disclaimer">This is an AI-based prediction tool and not a medical diagnosis. Consult a healthcare professional for medical advice.</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="scan_meal">Scan Meal</string>
+    <string name="log_water">Log Water</string>
+    <string name="risk_predictor">Risk Predictor</string>
+    <string name="diabetes_risk">Diabetes Risk</string>
+    <string name="dummy_diabetes_risk">12%</string>
+    <string name="hypertension_risk">Hypertension Risk</string>
+    <string name="dummy_hypertension_risk">8%</string>
+    <string name="dummy_water_val">2.1L / 3.0L</string>
+    <string name="dummy_water_percent">70% of daily goal</string>
+
+    <!-- Smart Diet -->
+    <string name="tab_scanner">AI Scanner</string>
+    <string name="tab_diet_plan">Diet Plan</string>
+    <string name="tab_grocery">Grocery List</string>
+    <string name="smart_meal_scanner">Smart Meal Scanner</string>
+    <string name="scanner_desc">Identify your food and its nutrients instantly.</string>
+    <string name="scanner_ready">AI COMMANDER: READY TO SCAN</string>
+    <string name="position_meal">Position meal within the frame</string>
+    <string name="btn_upload">Upload Photo</string>
+
+    <!-- Meal Scanner -->
+    <string name="back">Back</string>
+    <string name="ai_meal_scanner">AI Meal Scanner</string>
+    <string name="meal_scanner_subtitle">Position your meal inside the frame</string>
+    <string name="gallery">Gallery</string>
+    <string name="flash">Flash</string>
+
+    <!-- Meal Scanning -->
+    <string name="meal_analysis_status">
+        AI is analyzing your meal and calculating nutrients...
+    </string>
+
+    <string name="meal_analysis_subtitle">
+        This may take a few seconds
+    </string>
+
+    <string name="analysis_complete">
+        Analysis Complete
+    </string>
+
+    <string name="analysis_failed">
+        Analysis Failed
+    </string>
+
+    <string name="image_not_found">
+        Image not found
+    </string>
+
+    <string name="unable_to_load_image">
+        Unable to load image
+    </string>
+
+    <string name="ai_analysis_failed">
+        AI Analysis Failed
+    </string>
+
+    <!-- Wellness -->
+    <string name="smart_hydration">Smart Hydration</string>
+    <string name="dummy_hyd_val">1,750 ml</string>
+    <string name="dummy_hyd_goal">Goal: 3,000 ml</string>
+    <string name="hydration_tracker">Hydration Tracker</string>
+    <string name="quick_add">Quick Add</string>
+    <string name="add_250">+250ml</string>
+    <string name="add_500">+500ml</string>
+    <string name="mood_stress">Mood &amp; Stress</string>
+    <string name="mood_prompt">How are you feeling?</string>
+    <string name="stress_level">Stress Level</string>
+    <string name="btn_log_mood">Log Mood</string>
+    <string name="btn_breathe">Breathe</string>
+    <string name="risk_analysis">Predictive Risk Analysis</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="obesity">Obesity</string>
+    <string name="hypertension">Hypertension</string>
+
+    <!-- Community -->
+    <string name="active_challenges">Active Challenges</string>
+    <string name="joined">JOINED</string>
+    <string name="dummy_challenge">30 Days Keto Journey</string>
+    <string name="dummy_challenge_stats">15.2k participants • 12 days left</string>
+    <string name="btn_view_details">View Details</string>
+    <string name="community_feed">Community Feed</string>
+    <string name="dummy_user_sarah">Sarah Jenkins</string>
+    <string name="dummy_time">2 hours ago</string>
+    <string name="dummy_post">Just finished my morning 5k run! Feeling energized and ready to tackle the day. #healthylifestyle</string>
+    <string name="dummy_likes">❤️ 124</string>
+    <string name="dummy_comments">💬 18</string>
+
+    <!-- Profile -->
+    <string name="dummy_user_email">sai@example.com</string>
+    <string name="premium_member">Premium Member</string>
+    <string name="premium_desc">You have access to all premium features until Jan 2025.</string>
+    <string name="my_health_data">My Health Data</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="other">Other</string>
+
+    <!-- Goals -->
+    <string name="your_goals">Your Goals</string>
+    <string name="goals_subtitle">What do you want to achieve with HealthSync?</string>
+    <string name="goal_weight_loss">Weight Loss</string>
+    <string name="goal_muscle_gain">Muscle Gain</string>
+    <string name="goal_better_sleep">Better Sleep</string>
+    <string name="goal_stress_reduction">Stress Reduction</string>
+    <string name="goal_heart_health">Heart Health</string>
+    <string name="goal_mental_focus">Mental Focus</string>
+
+    <string name="personalize_profile">Personalize\nYour Profile</string>
+    <string name="basics_subtitle">Let\'s start with the basics to build your health baseline.</string>
+    <string name="hint_full_name">Full Name</string>
+    <string name="hint_age">Age</string>
+
+    <string name="identify_yourself">Identify Yourself</string>
+    <string name="gender_subtitle">Help AI Commander calibrate your metabolic profile.</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="body_metrics">Body Metrics</string>
+    <string name="height_cm">Height (cm)</string>
+    <string name="weight_kg">Weight (kg)</string>
+
+    <string name="already_have_account">Already have an account? Login</string>
+
+    <string name="btn_proceed">Proceed</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_finalize">Sync My Profile</string>
+
+    <!-- Wizard -->
+    <string name="activity_level">Activity Level</string>
+    <string name="activity_subtitle">How active are you on a daily basis?</string>
+    <string name="sedentary">Sedentary</string>
+    <string name="sedentary_desc">Little or no exercise</string>
+    <string name="moderately_active">Moderately Active</string>
+    <string name="moderately_active_desc">Exercise 3-5 times/week</string>
+    <string name="highly_active">Highly Active</string>
+    <string name="highly_active_desc">Daily intense exercise</string>
+    <string name="medical_history">Medical History</string>
+    <string name="medical_subtitle">Do you have any existing conditions?</string>
+    <string name="heart_condition">Heart Condition</string>
+    <string name="other_conditions_hint">Other conditions...</string>
+    <string name="daily_habits">Daily Habits</string>
+    <string name="target_water">Target Water Intake (ml)</string>
+    <string name="target_sleep">Target Sleep (hours)</string>
+</resources>

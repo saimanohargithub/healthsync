@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="16dp"
+    android:background="@drawable/bg_glass_card"
+    android:elevation="12dp"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/nav_home"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_health_logo"
+        android:contentDescription="Home" />
+
+    <ImageView
+        android:id="@+id/nav_scanner"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_health_logo"
+        android:contentDescription="Scanner" />
+
+    <ImageView
+        android:id="@+id/nav_wellness"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_health_logo"
+        android:contentDescription="Wellness" />
+
+    <ImageView
+        android:id="@+id/nav_profile"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:src="@drawable/ic_health_logo"
+        android:contentDescription="Profile" />
+
+</LinearLayout>

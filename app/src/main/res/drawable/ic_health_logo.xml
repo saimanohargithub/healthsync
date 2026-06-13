@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+    <!-- Futuristic AI + Health Geometry -->
+    <path
+        android:fillColor="@color/accent_cyan"
+        android:pathData="M50,10 L85,30 L85,70 L50,90 L15,70 L15,30 Z"
+        android:alpha="0.2" />
+    <path
+        android:strokeColor="@color/accent_cyan"
+        android:strokeWidth="2"
+        android:pathData="M50,20 L75,35 L75,65 L50,80 L25,65 L25,35 Z"
+        android:fillColor="#00000000" />
+    <path
+        android:fillColor="@color/accent_cyan"
+        android:pathData="M45,45 L55,45 L55,55 L45,55 Z" />
+    <path
+        android:strokeColor="@color/accent_cyan"
+        android:strokeWidth="1.5"
+        android:pathData="M50,10 L50,25 M85,30 L70,37.5 M85,70 L70,62.5 M50,90 L50,75 M15,70 L30,62.5 M15,30 L30,37.5" />
+</vector>

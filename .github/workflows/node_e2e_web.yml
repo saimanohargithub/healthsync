@@ -1,0 +1,45 @@
+name: Node E2E Web Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Start Dev Server
+      run: npm run dev &
+      env:
+        CI: true
+
+    - name: Wait for server to be ready
+      run: npx wait-on http://localhost:5173 --timeout 60000
+
+    - name: Generate Test Data
+      run: node tests/e2e_web/test_data_generator.js
+
+    - name: Run Mocha Selenium Tests
+      run: npx mocha tests/e2e_web/web_e2e_test.js
+
+    - name: Upload Test Report
+      uses: actions/upload-artifact@v4
+      if: always() # Upload the report even if some tests fail
+      with:
+        name: e2e-web-report
+        path: tests/e2e_web/e2e_web_report.xlsx

@@ -1,0 +1,4402 @@
+[
+  {
+    "id": "TC-0001",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_0",
+      "boundaryCheck": 0
+    }
+  },
+  {
+    "id": "TC-0002",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_1",
+      "boundaryCheck": 10
+    }
+  },
+  {
+    "id": "TC-0003",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 20",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_2",
+      "boundaryCheck": 20
+    }
+  },
+  {
+    "id": "TC-0004",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_3",
+      "boundaryCheck": 30
+    }
+  },
+  {
+    "id": "TC-0005",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #4",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_4",
+      "boundaryCheck": 40
+    }
+  },
+  {
+    "id": "TC-0006",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_5",
+      "boundaryCheck": 50
+    }
+  },
+  {
+    "id": "TC-0007",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_6",
+      "boundaryCheck": 60
+    }
+  },
+  {
+    "id": "TC-0008",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 70",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_7",
+      "boundaryCheck": 70
+    }
+  },
+  {
+    "id": "TC-0009",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_8",
+      "boundaryCheck": 80
+    }
+  },
+  {
+    "id": "TC-0010",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #9",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_9",
+      "boundaryCheck": 90
+    }
+  },
+  {
+    "id": "TC-0011",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_10",
+      "boundaryCheck": 100
+    }
+  },
+  {
+    "id": "TC-0012",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_11",
+      "boundaryCheck": 110
+    }
+  },
+  {
+    "id": "TC-0013",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 120",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_12",
+      "boundaryCheck": 120
+    }
+  },
+  {
+    "id": "TC-0014",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_13",
+      "boundaryCheck": 130
+    }
+  },
+  {
+    "id": "TC-0015",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #14",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_14",
+      "boundaryCheck": 140
+    }
+  },
+  {
+    "id": "TC-0016",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_15",
+      "boundaryCheck": 150
+    }
+  },
+  {
+    "id": "TC-0017",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_16",
+      "boundaryCheck": 160
+    }
+  },
+  {
+    "id": "TC-0018",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 170",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_17",
+      "boundaryCheck": 170
+    }
+  },
+  {
+    "id": "TC-0019",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_18",
+      "boundaryCheck": 180
+    }
+  },
+  {
+    "id": "TC-0020",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #19",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_19",
+      "boundaryCheck": 190
+    }
+  },
+  {
+    "id": "TC-0021",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_20",
+      "boundaryCheck": 200
+    }
+  },
+  {
+    "id": "TC-0022",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_21",
+      "boundaryCheck": 210
+    }
+  },
+  {
+    "id": "TC-0023",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 220",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_22",
+      "boundaryCheck": 220
+    }
+  },
+  {
+    "id": "TC-0024",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_23",
+      "boundaryCheck": 230
+    }
+  },
+  {
+    "id": "TC-0025",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #24",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_24",
+      "boundaryCheck": 240
+    }
+  },
+  {
+    "id": "TC-0026",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_25",
+      "boundaryCheck": 250
+    }
+  },
+  {
+    "id": "TC-0027",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_26",
+      "boundaryCheck": 260
+    }
+  },
+  {
+    "id": "TC-0028",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 270",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_27",
+      "boundaryCheck": 270
+    }
+  },
+  {
+    "id": "TC-0029",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_28",
+      "boundaryCheck": 280
+    }
+  },
+  {
+    "id": "TC-0030",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #29",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_29",
+      "boundaryCheck": 290
+    }
+  },
+  {
+    "id": "TC-0031",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_30",
+      "boundaryCheck": 300
+    }
+  },
+  {
+    "id": "TC-0032",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_31",
+      "boundaryCheck": 310
+    }
+  },
+  {
+    "id": "TC-0033",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 320",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_32",
+      "boundaryCheck": 320
+    }
+  },
+  {
+    "id": "TC-0034",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_33",
+      "boundaryCheck": 330
+    }
+  },
+  {
+    "id": "TC-0035",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #34",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_34",
+      "boundaryCheck": 340
+    }
+  },
+  {
+    "id": "TC-0036",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_35",
+      "boundaryCheck": 350
+    }
+  },
+  {
+    "id": "TC-0037",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_36",
+      "boundaryCheck": 360
+    }
+  },
+  {
+    "id": "TC-0038",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 370",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_37",
+      "boundaryCheck": 370
+    }
+  },
+  {
+    "id": "TC-0039",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_38",
+      "boundaryCheck": 380
+    }
+  },
+  {
+    "id": "TC-0040",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #39",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_39",
+      "boundaryCheck": 390
+    }
+  },
+  {
+    "id": "TC-0041",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_40",
+      "boundaryCheck": 400
+    }
+  },
+  {
+    "id": "TC-0042",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_41",
+      "boundaryCheck": 410
+    }
+  },
+  {
+    "id": "TC-0043",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 420",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_42",
+      "boundaryCheck": 420
+    }
+  },
+  {
+    "id": "TC-0044",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_43",
+      "boundaryCheck": 430
+    }
+  },
+  {
+    "id": "TC-0045",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #44",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_44",
+      "boundaryCheck": 440
+    }
+  },
+  {
+    "id": "TC-0046",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_45",
+      "boundaryCheck": 450
+    }
+  },
+  {
+    "id": "TC-0047",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_46",
+      "boundaryCheck": 460
+    }
+  },
+  {
+    "id": "TC-0048",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 470",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_47",
+      "boundaryCheck": 470
+    }
+  },
+  {
+    "id": "TC-0049",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_48",
+      "boundaryCheck": 480
+    }
+  },
+  {
+    "id": "TC-0050",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #49",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_49",
+      "boundaryCheck": 490
+    }
+  },
+  {
+    "id": "TC-0051",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_50",
+      "boundaryCheck": 500
+    }
+  },
+  {
+    "id": "TC-0052",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_51",
+      "boundaryCheck": 510
+    }
+  },
+  {
+    "id": "TC-0053",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 520",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_52",
+      "boundaryCheck": 520
+    }
+  },
+  {
+    "id": "TC-0054",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_53",
+      "boundaryCheck": 530
+    }
+  },
+  {
+    "id": "TC-0055",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #54",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_54",
+      "boundaryCheck": 540
+    }
+  },
+  {
+    "id": "TC-0056",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_55",
+      "boundaryCheck": 550
+    }
+  },
+  {
+    "id": "TC-0057",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_56",
+      "boundaryCheck": 560
+    }
+  },
+  {
+    "id": "TC-0058",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 570",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_57",
+      "boundaryCheck": 570
+    }
+  },
+  {
+    "id": "TC-0059",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_58",
+      "boundaryCheck": 580
+    }
+  },
+  {
+    "id": "TC-0060",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #59",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_59",
+      "boundaryCheck": 590
+    }
+  },
+  {
+    "id": "TC-0061",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_60",
+      "boundaryCheck": 600
+    }
+  },
+  {
+    "id": "TC-0062",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_61",
+      "boundaryCheck": 610
+    }
+  },
+  {
+    "id": "TC-0063",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 620",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_62",
+      "boundaryCheck": 620
+    }
+  },
+  {
+    "id": "TC-0064",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_63",
+      "boundaryCheck": 630
+    }
+  },
+  {
+    "id": "TC-0065",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #64",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_64",
+      "boundaryCheck": 640
+    }
+  },
+  {
+    "id": "TC-0066",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_65",
+      "boundaryCheck": 650
+    }
+  },
+  {
+    "id": "TC-0067",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_66",
+      "boundaryCheck": 660
+    }
+  },
+  {
+    "id": "TC-0068",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 670",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_67",
+      "boundaryCheck": 670
+    }
+  },
+  {
+    "id": "TC-0069",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_68",
+      "boundaryCheck": 680
+    }
+  },
+  {
+    "id": "TC-0070",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #69",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_69",
+      "boundaryCheck": 690
+    }
+  },
+  {
+    "id": "TC-0071",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_70",
+      "boundaryCheck": 700
+    }
+  },
+  {
+    "id": "TC-0072",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_71",
+      "boundaryCheck": 710
+    }
+  },
+  {
+    "id": "TC-0073",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 720",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_72",
+      "boundaryCheck": 720
+    }
+  },
+  {
+    "id": "TC-0074",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_73",
+      "boundaryCheck": 730
+    }
+  },
+  {
+    "id": "TC-0075",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #74",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_74",
+      "boundaryCheck": 740
+    }
+  },
+  {
+    "id": "TC-0076",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_75",
+      "boundaryCheck": 750
+    }
+  },
+  {
+    "id": "TC-0077",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_76",
+      "boundaryCheck": 760
+    }
+  },
+  {
+    "id": "TC-0078",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 770",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_77",
+      "boundaryCheck": 770
+    }
+  },
+  {
+    "id": "TC-0079",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_78",
+      "boundaryCheck": 780
+    }
+  },
+  {
+    "id": "TC-0080",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #79",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_79",
+      "boundaryCheck": 790
+    }
+  },
+  {
+    "id": "TC-0081",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_80",
+      "boundaryCheck": 800
+    }
+  },
+  {
+    "id": "TC-0082",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_81",
+      "boundaryCheck": 810
+    }
+  },
+  {
+    "id": "TC-0083",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 820",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_82",
+      "boundaryCheck": 820
+    }
+  },
+  {
+    "id": "TC-0084",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_83",
+      "boundaryCheck": 830
+    }
+  },
+  {
+    "id": "TC-0085",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #84",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_84",
+      "boundaryCheck": 840
+    }
+  },
+  {
+    "id": "TC-0086",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_85",
+      "boundaryCheck": 850
+    }
+  },
+  {
+    "id": "TC-0087",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_86",
+      "boundaryCheck": 860
+    }
+  },
+  {
+    "id": "TC-0088",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 870",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_87",
+      "boundaryCheck": 870
+    }
+  },
+  {
+    "id": "TC-0089",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_88",
+      "boundaryCheck": 880
+    }
+  },
+  {
+    "id": "TC-0090",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #89",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_89",
+      "boundaryCheck": 890
+    }
+  },
+  {
+    "id": "TC-0091",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_90",
+      "boundaryCheck": 900
+    }
+  },
+  {
+    "id": "TC-0092",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_91",
+      "boundaryCheck": 910
+    }
+  },
+  {
+    "id": "TC-0093",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 920",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_92",
+      "boundaryCheck": 920
+    }
+  },
+  {
+    "id": "TC-0094",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_93",
+      "boundaryCheck": 930
+    }
+  },
+  {
+    "id": "TC-0095",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #94",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_94",
+      "boundaryCheck": 940
+    }
+  },
+  {
+    "id": "TC-0096",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_95",
+      "boundaryCheck": 950
+    }
+  },
+  {
+    "id": "TC-0097",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_96",
+      "boundaryCheck": 960
+    }
+  },
+  {
+    "id": "TC-0098",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 970",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_97",
+      "boundaryCheck": 970
+    }
+  },
+  {
+    "id": "TC-0099",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_98",
+      "boundaryCheck": 980
+    }
+  },
+  {
+    "id": "TC-0100",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #99",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_99",
+      "boundaryCheck": 990
+    }
+  },
+  {
+    "id": "TC-0101",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_100",
+      "boundaryCheck": 1000
+    }
+  },
+  {
+    "id": "TC-0102",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_101",
+      "boundaryCheck": 1010
+    }
+  },
+  {
+    "id": "TC-0103",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 1020",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_102",
+      "boundaryCheck": 1020
+    }
+  },
+  {
+    "id": "TC-0104",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_103",
+      "boundaryCheck": 1030
+    }
+  },
+  {
+    "id": "TC-0105",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #104",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_104",
+      "boundaryCheck": 1040
+    }
+  },
+  {
+    "id": "TC-0106",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_105",
+      "boundaryCheck": 1050
+    }
+  },
+  {
+    "id": "TC-0107",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_106",
+      "boundaryCheck": 1060
+    }
+  },
+  {
+    "id": "TC-0108",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 1070",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_107",
+      "boundaryCheck": 1070
+    }
+  },
+  {
+    "id": "TC-0109",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_108",
+      "boundaryCheck": 1080
+    }
+  },
+  {
+    "id": "TC-0110",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #109",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_109",
+      "boundaryCheck": 1090
+    }
+  },
+  {
+    "id": "TC-0111",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_110",
+      "boundaryCheck": 1100
+    }
+  },
+  {
+    "id": "TC-0112",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_111",
+      "boundaryCheck": 1110
+    }
+  },
+  {
+    "id": "TC-0113",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 1120",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_112",
+      "boundaryCheck": 1120
+    }
+  },
+  {
+    "id": "TC-0114",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_113",
+      "boundaryCheck": 1130
+    }
+  },
+  {
+    "id": "TC-0115",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #114",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_114",
+      "boundaryCheck": 1140
+    }
+  },
+  {
+    "id": "TC-0116",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_115",
+      "boundaryCheck": 1150
+    }
+  },
+  {
+    "id": "TC-0117",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_116",
+      "boundaryCheck": 1160
+    }
+  },
+  {
+    "id": "TC-0118",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 1170",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_117",
+      "boundaryCheck": 1170
+    }
+  },
+  {
+    "id": "TC-0119",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_118",
+      "boundaryCheck": 1180
+    }
+  },
+  {
+    "id": "TC-0120",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #119",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_119",
+      "boundaryCheck": 1190
+    }
+  },
+  {
+    "id": "TC-0121",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_120",
+      "boundaryCheck": 1200
+    }
+  },
+  {
+    "id": "TC-0122",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_121",
+      "boundaryCheck": 1210
+    }
+  },
+  {
+    "id": "TC-0123",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 1220",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_122",
+      "boundaryCheck": 1220
+    }
+  },
+  {
+    "id": "TC-0124",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_123",
+      "boundaryCheck": 1230
+    }
+  },
+  {
+    "id": "TC-0125",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #124",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_124",
+      "boundaryCheck": 1240
+    }
+  },
+  {
+    "id": "TC-0126",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_125",
+      "boundaryCheck": 1250
+    }
+  },
+  {
+    "id": "TC-0127",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_126",
+      "boundaryCheck": 1260
+    }
+  },
+  {
+    "id": "TC-0128",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 1270",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_127",
+      "boundaryCheck": 1270
+    }
+  },
+  {
+    "id": "TC-0129",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_128",
+      "boundaryCheck": 1280
+    }
+  },
+  {
+    "id": "TC-0130",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #129",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_129",
+      "boundaryCheck": 1290
+    }
+  },
+  {
+    "id": "TC-0131",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_130",
+      "boundaryCheck": 1300
+    }
+  },
+  {
+    "id": "TC-0132",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_131",
+      "boundaryCheck": 1310
+    }
+  },
+  {
+    "id": "TC-0133",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 1320",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_132",
+      "boundaryCheck": 1320
+    }
+  },
+  {
+    "id": "TC-0134",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_133",
+      "boundaryCheck": 1330
+    }
+  },
+  {
+    "id": "TC-0135",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #134",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_134",
+      "boundaryCheck": 1340
+    }
+  },
+  {
+    "id": "TC-0136",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_135",
+      "boundaryCheck": 1350
+    }
+  },
+  {
+    "id": "TC-0137",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_136",
+      "boundaryCheck": 1360
+    }
+  },
+  {
+    "id": "TC-0138",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 1370",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_137",
+      "boundaryCheck": 1370
+    }
+  },
+  {
+    "id": "TC-0139",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_138",
+      "boundaryCheck": 1380
+    }
+  },
+  {
+    "id": "TC-0140",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #139",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_139",
+      "boundaryCheck": 1390
+    }
+  },
+  {
+    "id": "TC-0141",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_140",
+      "boundaryCheck": 1400
+    }
+  },
+  {
+    "id": "TC-0142",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_141",
+      "boundaryCheck": 1410
+    }
+  },
+  {
+    "id": "TC-0143",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 1420",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_142",
+      "boundaryCheck": 1420
+    }
+  },
+  {
+    "id": "TC-0144",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_143",
+      "boundaryCheck": 1430
+    }
+  },
+  {
+    "id": "TC-0145",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #144",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_144",
+      "boundaryCheck": 1440
+    }
+  },
+  {
+    "id": "TC-0146",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_145",
+      "boundaryCheck": 1450
+    }
+  },
+  {
+    "id": "TC-0147",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_146",
+      "boundaryCheck": 1460
+    }
+  },
+  {
+    "id": "TC-0148",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 1470",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_147",
+      "boundaryCheck": 1470
+    }
+  },
+  {
+    "id": "TC-0149",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_148",
+      "boundaryCheck": 1480
+    }
+  },
+  {
+    "id": "TC-0150",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #149",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_149",
+      "boundaryCheck": 1490
+    }
+  },
+  {
+    "id": "TC-0151",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_150",
+      "boundaryCheck": 1500
+    }
+  },
+  {
+    "id": "TC-0152",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_151",
+      "boundaryCheck": 1510
+    }
+  },
+  {
+    "id": "TC-0153",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 1520",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_152",
+      "boundaryCheck": 1520
+    }
+  },
+  {
+    "id": "TC-0154",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_153",
+      "boundaryCheck": 1530
+    }
+  },
+  {
+    "id": "TC-0155",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #154",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_154",
+      "boundaryCheck": 1540
+    }
+  },
+  {
+    "id": "TC-0156",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_155",
+      "boundaryCheck": 1550
+    }
+  },
+  {
+    "id": "TC-0157",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_156",
+      "boundaryCheck": 1560
+    }
+  },
+  {
+    "id": "TC-0158",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 1570",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_157",
+      "boundaryCheck": 1570
+    }
+  },
+  {
+    "id": "TC-0159",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_158",
+      "boundaryCheck": 1580
+    }
+  },
+  {
+    "id": "TC-0160",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #159",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_159",
+      "boundaryCheck": 1590
+    }
+  },
+  {
+    "id": "TC-0161",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_160",
+      "boundaryCheck": 1600
+    }
+  },
+  {
+    "id": "TC-0162",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_161",
+      "boundaryCheck": 1610
+    }
+  },
+  {
+    "id": "TC-0163",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 1620",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_162",
+      "boundaryCheck": 1620
+    }
+  },
+  {
+    "id": "TC-0164",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_163",
+      "boundaryCheck": 1630
+    }
+  },
+  {
+    "id": "TC-0165",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #164",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_164",
+      "boundaryCheck": 1640
+    }
+  },
+  {
+    "id": "TC-0166",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_165",
+      "boundaryCheck": 1650
+    }
+  },
+  {
+    "id": "TC-0167",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_166",
+      "boundaryCheck": 1660
+    }
+  },
+  {
+    "id": "TC-0168",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 1670",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_167",
+      "boundaryCheck": 1670
+    }
+  },
+  {
+    "id": "TC-0169",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_168",
+      "boundaryCheck": 1680
+    }
+  },
+  {
+    "id": "TC-0170",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #169",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_169",
+      "boundaryCheck": 1690
+    }
+  },
+  {
+    "id": "TC-0171",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_170",
+      "boundaryCheck": 1700
+    }
+  },
+  {
+    "id": "TC-0172",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_171",
+      "boundaryCheck": 1710
+    }
+  },
+  {
+    "id": "TC-0173",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 1720",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_172",
+      "boundaryCheck": 1720
+    }
+  },
+  {
+    "id": "TC-0174",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_173",
+      "boundaryCheck": 1730
+    }
+  },
+  {
+    "id": "TC-0175",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #174",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_174",
+      "boundaryCheck": 1740
+    }
+  },
+  {
+    "id": "TC-0176",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_175",
+      "boundaryCheck": 1750
+    }
+  },
+  {
+    "id": "TC-0177",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_176",
+      "boundaryCheck": 1760
+    }
+  },
+  {
+    "id": "TC-0178",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 1770",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_177",
+      "boundaryCheck": 1770
+    }
+  },
+  {
+    "id": "TC-0179",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_178",
+      "boundaryCheck": 1780
+    }
+  },
+  {
+    "id": "TC-0180",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #179",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_179",
+      "boundaryCheck": 1790
+    }
+  },
+  {
+    "id": "TC-0181",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_180",
+      "boundaryCheck": 1800
+    }
+  },
+  {
+    "id": "TC-0182",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_181",
+      "boundaryCheck": 1810
+    }
+  },
+  {
+    "id": "TC-0183",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 1820",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_182",
+      "boundaryCheck": 1820
+    }
+  },
+  {
+    "id": "TC-0184",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_183",
+      "boundaryCheck": 1830
+    }
+  },
+  {
+    "id": "TC-0185",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #184",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_184",
+      "boundaryCheck": 1840
+    }
+  },
+  {
+    "id": "TC-0186",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_185",
+      "boundaryCheck": 1850
+    }
+  },
+  {
+    "id": "TC-0187",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_186",
+      "boundaryCheck": 1860
+    }
+  },
+  {
+    "id": "TC-0188",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 1870",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_187",
+      "boundaryCheck": 1870
+    }
+  },
+  {
+    "id": "TC-0189",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_188",
+      "boundaryCheck": 1880
+    }
+  },
+  {
+    "id": "TC-0190",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #189",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_189",
+      "boundaryCheck": 1890
+    }
+  },
+  {
+    "id": "TC-0191",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_190",
+      "boundaryCheck": 1900
+    }
+  },
+  {
+    "id": "TC-0192",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_191",
+      "boundaryCheck": 1910
+    }
+  },
+  {
+    "id": "TC-0193",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 1920",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_192",
+      "boundaryCheck": 1920
+    }
+  },
+  {
+    "id": "TC-0194",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_193",
+      "boundaryCheck": 1930
+    }
+  },
+  {
+    "id": "TC-0195",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #194",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_194",
+      "boundaryCheck": 1940
+    }
+  },
+  {
+    "id": "TC-0196",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_195",
+      "boundaryCheck": 1950
+    }
+  },
+  {
+    "id": "TC-0197",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_196",
+      "boundaryCheck": 1960
+    }
+  },
+  {
+    "id": "TC-0198",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 1970",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_197",
+      "boundaryCheck": 1970
+    }
+  },
+  {
+    "id": "TC-0199",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_198",
+      "boundaryCheck": 1980
+    }
+  },
+  {
+    "id": "TC-0200",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #199",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_199",
+      "boundaryCheck": 1990
+    }
+  },
+  {
+    "id": "TC-0201",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_200",
+      "boundaryCheck": 2000
+    }
+  },
+  {
+    "id": "TC-0202",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_201",
+      "boundaryCheck": 2010
+    }
+  },
+  {
+    "id": "TC-0203",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 2020",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_202",
+      "boundaryCheck": 2020
+    }
+  },
+  {
+    "id": "TC-0204",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_203",
+      "boundaryCheck": 2030
+    }
+  },
+  {
+    "id": "TC-0205",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #204",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_204",
+      "boundaryCheck": 2040
+    }
+  },
+  {
+    "id": "TC-0206",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_205",
+      "boundaryCheck": 2050
+    }
+  },
+  {
+    "id": "TC-0207",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_206",
+      "boundaryCheck": 2060
+    }
+  },
+  {
+    "id": "TC-0208",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 2070",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_207",
+      "boundaryCheck": 2070
+    }
+  },
+  {
+    "id": "TC-0209",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_208",
+      "boundaryCheck": 2080
+    }
+  },
+  {
+    "id": "TC-0210",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #209",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_209",
+      "boundaryCheck": 2090
+    }
+  },
+  {
+    "id": "TC-0211",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_210",
+      "boundaryCheck": 2100
+    }
+  },
+  {
+    "id": "TC-0212",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_211",
+      "boundaryCheck": 2110
+    }
+  },
+  {
+    "id": "TC-0213",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 2120",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_212",
+      "boundaryCheck": 2120
+    }
+  },
+  {
+    "id": "TC-0214",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_213",
+      "boundaryCheck": 2130
+    }
+  },
+  {
+    "id": "TC-0215",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #214",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_214",
+      "boundaryCheck": 2140
+    }
+  },
+  {
+    "id": "TC-0216",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_215",
+      "boundaryCheck": 2150
+    }
+  },
+  {
+    "id": "TC-0217",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_216",
+      "boundaryCheck": 2160
+    }
+  },
+  {
+    "id": "TC-0218",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 2170",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_217",
+      "boundaryCheck": 2170
+    }
+  },
+  {
+    "id": "TC-0219",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_218",
+      "boundaryCheck": 2180
+    }
+  },
+  {
+    "id": "TC-0220",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #219",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_219",
+      "boundaryCheck": 2190
+    }
+  },
+  {
+    "id": "TC-0221",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_220",
+      "boundaryCheck": 2200
+    }
+  },
+  {
+    "id": "TC-0222",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_221",
+      "boundaryCheck": 2210
+    }
+  },
+  {
+    "id": "TC-0223",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 2220",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_222",
+      "boundaryCheck": 2220
+    }
+  },
+  {
+    "id": "TC-0224",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_223",
+      "boundaryCheck": 2230
+    }
+  },
+  {
+    "id": "TC-0225",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #224",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_224",
+      "boundaryCheck": 2240
+    }
+  },
+  {
+    "id": "TC-0226",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_225",
+      "boundaryCheck": 2250
+    }
+  },
+  {
+    "id": "TC-0227",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_226",
+      "boundaryCheck": 2260
+    }
+  },
+  {
+    "id": "TC-0228",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 2270",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_227",
+      "boundaryCheck": 2270
+    }
+  },
+  {
+    "id": "TC-0229",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_228",
+      "boundaryCheck": 2280
+    }
+  },
+  {
+    "id": "TC-0230",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #229",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_229",
+      "boundaryCheck": 2290
+    }
+  },
+  {
+    "id": "TC-0231",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_230",
+      "boundaryCheck": 2300
+    }
+  },
+  {
+    "id": "TC-0232",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_231",
+      "boundaryCheck": 2310
+    }
+  },
+  {
+    "id": "TC-0233",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 2320",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_232",
+      "boundaryCheck": 2320
+    }
+  },
+  {
+    "id": "TC-0234",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_233",
+      "boundaryCheck": 2330
+    }
+  },
+  {
+    "id": "TC-0235",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #234",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_234",
+      "boundaryCheck": 2340
+    }
+  },
+  {
+    "id": "TC-0236",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_235",
+      "boundaryCheck": 2350
+    }
+  },
+  {
+    "id": "TC-0237",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_236",
+      "boundaryCheck": 2360
+    }
+  },
+  {
+    "id": "TC-0238",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 2370",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_237",
+      "boundaryCheck": 2370
+    }
+  },
+  {
+    "id": "TC-0239",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_238",
+      "boundaryCheck": 2380
+    }
+  },
+  {
+    "id": "TC-0240",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #239",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_239",
+      "boundaryCheck": 2390
+    }
+  },
+  {
+    "id": "TC-0241",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_240",
+      "boundaryCheck": 2400
+    }
+  },
+  {
+    "id": "TC-0242",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_241",
+      "boundaryCheck": 2410
+    }
+  },
+  {
+    "id": "TC-0243",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 2420",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_242",
+      "boundaryCheck": 2420
+    }
+  },
+  {
+    "id": "TC-0244",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_243",
+      "boundaryCheck": 2430
+    }
+  },
+  {
+    "id": "TC-0245",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #244",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_244",
+      "boundaryCheck": 2440
+    }
+  },
+  {
+    "id": "TC-0246",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_245",
+      "boundaryCheck": 2450
+    }
+  },
+  {
+    "id": "TC-0247",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_246",
+      "boundaryCheck": 2460
+    }
+  },
+  {
+    "id": "TC-0248",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 2470",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_247",
+      "boundaryCheck": 2470
+    }
+  },
+  {
+    "id": "TC-0249",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_248",
+      "boundaryCheck": 2480
+    }
+  },
+  {
+    "id": "TC-0250",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #249",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_249",
+      "boundaryCheck": 2490
+    }
+  },
+  {
+    "id": "TC-0251",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_250",
+      "boundaryCheck": 2500
+    }
+  },
+  {
+    "id": "TC-0252",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_251",
+      "boundaryCheck": 2510
+    }
+  },
+  {
+    "id": "TC-0253",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 2520",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_252",
+      "boundaryCheck": 2520
+    }
+  },
+  {
+    "id": "TC-0254",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_253",
+      "boundaryCheck": 2530
+    }
+  },
+  {
+    "id": "TC-0255",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #254",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_254",
+      "boundaryCheck": 2540
+    }
+  },
+  {
+    "id": "TC-0256",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_255",
+      "boundaryCheck": 2550
+    }
+  },
+  {
+    "id": "TC-0257",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_256",
+      "boundaryCheck": 2560
+    }
+  },
+  {
+    "id": "TC-0258",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 2570",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_257",
+      "boundaryCheck": 2570
+    }
+  },
+  {
+    "id": "TC-0259",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_258",
+      "boundaryCheck": 2580
+    }
+  },
+  {
+    "id": "TC-0260",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #259",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_259",
+      "boundaryCheck": 2590
+    }
+  },
+  {
+    "id": "TC-0261",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_260",
+      "boundaryCheck": 2600
+    }
+  },
+  {
+    "id": "TC-0262",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_261",
+      "boundaryCheck": 2610
+    }
+  },
+  {
+    "id": "TC-0263",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 2620",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_262",
+      "boundaryCheck": 2620
+    }
+  },
+  {
+    "id": "TC-0264",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_263",
+      "boundaryCheck": 2630
+    }
+  },
+  {
+    "id": "TC-0265",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #264",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_264",
+      "boundaryCheck": 2640
+    }
+  },
+  {
+    "id": "TC-0266",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_265",
+      "boundaryCheck": 2650
+    }
+  },
+  {
+    "id": "TC-0267",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_266",
+      "boundaryCheck": 2660
+    }
+  },
+  {
+    "id": "TC-0268",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 2670",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_267",
+      "boundaryCheck": 2670
+    }
+  },
+  {
+    "id": "TC-0269",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_268",
+      "boundaryCheck": 2680
+    }
+  },
+  {
+    "id": "TC-0270",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #269",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_269",
+      "boundaryCheck": 2690
+    }
+  },
+  {
+    "id": "TC-0271",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_270",
+      "boundaryCheck": 2700
+    }
+  },
+  {
+    "id": "TC-0272",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_271",
+      "boundaryCheck": 2710
+    }
+  },
+  {
+    "id": "TC-0273",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 2720",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_272",
+      "boundaryCheck": 2720
+    }
+  },
+  {
+    "id": "TC-0274",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_273",
+      "boundaryCheck": 2730
+    }
+  },
+  {
+    "id": "TC-0275",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #274",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_274",
+      "boundaryCheck": 2740
+    }
+  },
+  {
+    "id": "TC-0276",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_275",
+      "boundaryCheck": 2750
+    }
+  },
+  {
+    "id": "TC-0277",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_276",
+      "boundaryCheck": 2760
+    }
+  },
+  {
+    "id": "TC-0278",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 2770",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_277",
+      "boundaryCheck": 2770
+    }
+  },
+  {
+    "id": "TC-0279",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_278",
+      "boundaryCheck": 2780
+    }
+  },
+  {
+    "id": "TC-0280",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #279",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_279",
+      "boundaryCheck": 2790
+    }
+  },
+  {
+    "id": "TC-0281",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_280",
+      "boundaryCheck": 2800
+    }
+  },
+  {
+    "id": "TC-0282",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_281",
+      "boundaryCheck": 2810
+    }
+  },
+  {
+    "id": "TC-0283",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 2820",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_282",
+      "boundaryCheck": 2820
+    }
+  },
+  {
+    "id": "TC-0284",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_283",
+      "boundaryCheck": 2830
+    }
+  },
+  {
+    "id": "TC-0285",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #284",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_284",
+      "boundaryCheck": 2840
+    }
+  },
+  {
+    "id": "TC-0286",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_285",
+      "boundaryCheck": 2850
+    }
+  },
+  {
+    "id": "TC-0287",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_286",
+      "boundaryCheck": 2860
+    }
+  },
+  {
+    "id": "TC-0288",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 2870",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_287",
+      "boundaryCheck": 2870
+    }
+  },
+  {
+    "id": "TC-0289",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_288",
+      "boundaryCheck": 2880
+    }
+  },
+  {
+    "id": "TC-0290",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #289",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_289",
+      "boundaryCheck": 2890
+    }
+  },
+  {
+    "id": "TC-0291",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_290",
+      "boundaryCheck": 2900
+    }
+  },
+  {
+    "id": "TC-0292",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_291",
+      "boundaryCheck": 2910
+    }
+  },
+  {
+    "id": "TC-0293",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 2920",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_292",
+      "boundaryCheck": 2920
+    }
+  },
+  {
+    "id": "TC-0294",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_293",
+      "boundaryCheck": 2930
+    }
+  },
+  {
+    "id": "TC-0295",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #294",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_294",
+      "boundaryCheck": 2940
+    }
+  },
+  {
+    "id": "TC-0296",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_295",
+      "boundaryCheck": 2950
+    }
+  },
+  {
+    "id": "TC-0297",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_296",
+      "boundaryCheck": 2960
+    }
+  },
+  {
+    "id": "TC-0298",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 2970",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_297",
+      "boundaryCheck": 2970
+    }
+  },
+  {
+    "id": "TC-0299",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_298",
+      "boundaryCheck": 2980
+    }
+  },
+  {
+    "id": "TC-0300",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #299",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_299",
+      "boundaryCheck": 2990
+    }
+  },
+  {
+    "id": "TC-0301",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_300",
+      "boundaryCheck": 3000
+    }
+  },
+  {
+    "id": "TC-0302",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_301",
+      "boundaryCheck": 3010
+    }
+  },
+  {
+    "id": "TC-0303",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 3020",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_302",
+      "boundaryCheck": 3020
+    }
+  },
+  {
+    "id": "TC-0304",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_303",
+      "boundaryCheck": 3030
+    }
+  },
+  {
+    "id": "TC-0305",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #304",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_304",
+      "boundaryCheck": 3040
+    }
+  },
+  {
+    "id": "TC-0306",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_305",
+      "boundaryCheck": 3050
+    }
+  },
+  {
+    "id": "TC-0307",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_306",
+      "boundaryCheck": 3060
+    }
+  },
+  {
+    "id": "TC-0308",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 3070",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_307",
+      "boundaryCheck": 3070
+    }
+  },
+  {
+    "id": "TC-0309",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_308",
+      "boundaryCheck": 3080
+    }
+  },
+  {
+    "id": "TC-0310",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #309",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_309",
+      "boundaryCheck": 3090
+    }
+  },
+  {
+    "id": "TC-0311",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_310",
+      "boundaryCheck": 3100
+    }
+  },
+  {
+    "id": "TC-0312",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_311",
+      "boundaryCheck": 3110
+    }
+  },
+  {
+    "id": "TC-0313",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 3120",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_312",
+      "boundaryCheck": 3120
+    }
+  },
+  {
+    "id": "TC-0314",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_313",
+      "boundaryCheck": 3130
+    }
+  },
+  {
+    "id": "TC-0315",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #314",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_314",
+      "boundaryCheck": 3140
+    }
+  },
+  {
+    "id": "TC-0316",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_315",
+      "boundaryCheck": 3150
+    }
+  },
+  {
+    "id": "TC-0317",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_316",
+      "boundaryCheck": 3160
+    }
+  },
+  {
+    "id": "TC-0318",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 3170",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_317",
+      "boundaryCheck": 3170
+    }
+  },
+  {
+    "id": "TC-0319",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_318",
+      "boundaryCheck": 3180
+    }
+  },
+  {
+    "id": "TC-0320",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #319",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_319",
+      "boundaryCheck": 3190
+    }
+  },
+  {
+    "id": "TC-0321",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_320",
+      "boundaryCheck": 3200
+    }
+  },
+  {
+    "id": "TC-0322",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_321",
+      "boundaryCheck": 3210
+    }
+  },
+  {
+    "id": "TC-0323",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 3220",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_322",
+      "boundaryCheck": 3220
+    }
+  },
+  {
+    "id": "TC-0324",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_323",
+      "boundaryCheck": 3230
+    }
+  },
+  {
+    "id": "TC-0325",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #324",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_324",
+      "boundaryCheck": 3240
+    }
+  },
+  {
+    "id": "TC-0326",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_325",
+      "boundaryCheck": 3250
+    }
+  },
+  {
+    "id": "TC-0327",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_326",
+      "boundaryCheck": 3260
+    }
+  },
+  {
+    "id": "TC-0328",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 3270",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_327",
+      "boundaryCheck": 3270
+    }
+  },
+  {
+    "id": "TC-0329",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_328",
+      "boundaryCheck": 3280
+    }
+  },
+  {
+    "id": "TC-0330",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #329",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_329",
+      "boundaryCheck": 3290
+    }
+  },
+  {
+    "id": "TC-0331",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_330",
+      "boundaryCheck": 3300
+    }
+  },
+  {
+    "id": "TC-0332",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_331",
+      "boundaryCheck": 3310
+    }
+  },
+  {
+    "id": "TC-0333",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 3320",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_332",
+      "boundaryCheck": 3320
+    }
+  },
+  {
+    "id": "TC-0334",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_333",
+      "boundaryCheck": 3330
+    }
+  },
+  {
+    "id": "TC-0335",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #334",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_334",
+      "boundaryCheck": 3340
+    }
+  },
+  {
+    "id": "TC-0336",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_335",
+      "boundaryCheck": 3350
+    }
+  },
+  {
+    "id": "TC-0337",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_336",
+      "boundaryCheck": 3360
+    }
+  },
+  {
+    "id": "TC-0338",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 3370",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_337",
+      "boundaryCheck": 3370
+    }
+  },
+  {
+    "id": "TC-0339",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_338",
+      "boundaryCheck": 3380
+    }
+  },
+  {
+    "id": "TC-0340",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #339",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_339",
+      "boundaryCheck": 3390
+    }
+  },
+  {
+    "id": "TC-0341",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_340",
+      "boundaryCheck": 3400
+    }
+  },
+  {
+    "id": "TC-0342",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_341",
+      "boundaryCheck": 3410
+    }
+  },
+  {
+    "id": "TC-0343",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 3420",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_342",
+      "boundaryCheck": 3420
+    }
+  },
+  {
+    "id": "TC-0344",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_343",
+      "boundaryCheck": 3430
+    }
+  },
+  {
+    "id": "TC-0345",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #344",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_344",
+      "boundaryCheck": 3440
+    }
+  },
+  {
+    "id": "TC-0346",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_345",
+      "boundaryCheck": 3450
+    }
+  },
+  {
+    "id": "TC-0347",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_346",
+      "boundaryCheck": 3460
+    }
+  },
+  {
+    "id": "TC-0348",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 3470",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_347",
+      "boundaryCheck": 3470
+    }
+  },
+  {
+    "id": "TC-0349",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_348",
+      "boundaryCheck": 3480
+    }
+  },
+  {
+    "id": "TC-0350",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #349",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_349",
+      "boundaryCheck": 3490
+    }
+  },
+  {
+    "id": "TC-0351",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_350",
+      "boundaryCheck": 3500
+    }
+  },
+  {
+    "id": "TC-0352",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_351",
+      "boundaryCheck": 3510
+    }
+  },
+  {
+    "id": "TC-0353",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 3520",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_352",
+      "boundaryCheck": 3520
+    }
+  },
+  {
+    "id": "TC-0354",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_353",
+      "boundaryCheck": 3530
+    }
+  },
+  {
+    "id": "TC-0355",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #354",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_354",
+      "boundaryCheck": 3540
+    }
+  },
+  {
+    "id": "TC-0356",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_355",
+      "boundaryCheck": 3550
+    }
+  },
+  {
+    "id": "TC-0357",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_356",
+      "boundaryCheck": 3560
+    }
+  },
+  {
+    "id": "TC-0358",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 3570",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_357",
+      "boundaryCheck": 3570
+    }
+  },
+  {
+    "id": "TC-0359",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_358",
+      "boundaryCheck": 3580
+    }
+  },
+  {
+    "id": "TC-0360",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #359",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_359",
+      "boundaryCheck": 3590
+    }
+  },
+  {
+    "id": "TC-0361",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_360",
+      "boundaryCheck": 3600
+    }
+  },
+  {
+    "id": "TC-0362",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_361",
+      "boundaryCheck": 3610
+    }
+  },
+  {
+    "id": "TC-0363",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 3620",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_362",
+      "boundaryCheck": 3620
+    }
+  },
+  {
+    "id": "TC-0364",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_363",
+      "boundaryCheck": 3630
+    }
+  },
+  {
+    "id": "TC-0365",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #364",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_364",
+      "boundaryCheck": 3640
+    }
+  },
+  {
+    "id": "TC-0366",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_365",
+      "boundaryCheck": 3650
+    }
+  },
+  {
+    "id": "TC-0367",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_366",
+      "boundaryCheck": 3660
+    }
+  },
+  {
+    "id": "TC-0368",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 3670",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_367",
+      "boundaryCheck": 3670
+    }
+  },
+  {
+    "id": "TC-0369",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_368",
+      "boundaryCheck": 3680
+    }
+  },
+  {
+    "id": "TC-0370",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #369",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_369",
+      "boundaryCheck": 3690
+    }
+  },
+  {
+    "id": "TC-0371",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_370",
+      "boundaryCheck": 3700
+    }
+  },
+  {
+    "id": "TC-0372",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_371",
+      "boundaryCheck": 3710
+    }
+  },
+  {
+    "id": "TC-0373",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 3720",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_372",
+      "boundaryCheck": 3720
+    }
+  },
+  {
+    "id": "TC-0374",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_373",
+      "boundaryCheck": 3730
+    }
+  },
+  {
+    "id": "TC-0375",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #374",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_374",
+      "boundaryCheck": 3740
+    }
+  },
+  {
+    "id": "TC-0376",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_375",
+      "boundaryCheck": 3750
+    }
+  },
+  {
+    "id": "TC-0377",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_376",
+      "boundaryCheck": 3760
+    }
+  },
+  {
+    "id": "TC-0378",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 3770",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_377",
+      "boundaryCheck": 3770
+    }
+  },
+  {
+    "id": "TC-0379",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_378",
+      "boundaryCheck": 3780
+    }
+  },
+  {
+    "id": "TC-0380",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #379",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_379",
+      "boundaryCheck": 3790
+    }
+  },
+  {
+    "id": "TC-0381",
+    "category": "Login",
+    "role": "admin",
+    "action": "Attempt login with admin credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_380",
+      "boundaryCheck": 3800
+    }
+  },
+  {
+    "id": "TC-0382",
+    "category": "Navigation",
+    "role": "manager",
+    "action": "Navigate to manager restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_381",
+      "boundaryCheck": 3810
+    }
+  },
+  {
+    "id": "TC-0383",
+    "category": "FormValidation",
+    "role": "user",
+    "action": "Submit form with boundary value 3820",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_382",
+      "boundaryCheck": 3820
+    }
+  },
+  {
+    "id": "TC-0384",
+    "category": "Dashboard",
+    "role": "guest",
+    "action": "Load dashboard widgets for guest",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_383",
+      "boundaryCheck": 3830
+    }
+  },
+  {
+    "id": "TC-0385",
+    "category": "Community",
+    "role": "admin",
+    "action": "View community feed post #384",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_384",
+      "boundaryCheck": 3840
+    }
+  },
+  {
+    "id": "TC-0386",
+    "category": "Login",
+    "role": "manager",
+    "action": "Attempt login with manager credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_385",
+      "boundaryCheck": 3850
+    }
+  },
+  {
+    "id": "TC-0387",
+    "category": "Navigation",
+    "role": "user",
+    "action": "Navigate to user restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_386",
+      "boundaryCheck": 3860
+    }
+  },
+  {
+    "id": "TC-0388",
+    "category": "FormValidation",
+    "role": "guest",
+    "action": "Submit form with boundary value 3870",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_387",
+      "boundaryCheck": 3870
+    }
+  },
+  {
+    "id": "TC-0389",
+    "category": "Dashboard",
+    "role": "admin",
+    "action": "Load dashboard widgets for admin",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_388",
+      "boundaryCheck": 3880
+    }
+  },
+  {
+    "id": "TC-0390",
+    "category": "Community",
+    "role": "manager",
+    "action": "View community feed post #389",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_389",
+      "boundaryCheck": 3890
+    }
+  },
+  {
+    "id": "TC-0391",
+    "category": "Login",
+    "role": "user",
+    "action": "Attempt login with user credentials",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_390",
+      "boundaryCheck": 3900
+    }
+  },
+  {
+    "id": "TC-0392",
+    "category": "Navigation",
+    "role": "guest",
+    "action": "Navigate to guest restricted area",
+    "expectedOutcome": "Redirect",
+    "testData": {
+      "inputValue": "TestInput_391",
+      "boundaryCheck": 3910
+    }
+  },
+  {
+    "id": "TC-0393",
+    "category": "FormValidation",
+    "role": "admin",
+    "action": "Submit form with boundary value 3920",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_392",
+      "boundaryCheck": 3920
+    }
+  },
+  {
+    "id": "TC-0394",
+    "category": "Dashboard",
+    "role": "manager",
+    "action": "Load dashboard widgets for manager",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_393",
+      "boundaryCheck": 3930
+    }
+  },
+  {
+    "id": "TC-0395",
+    "category": "Community",
+    "role": "user",
+    "action": "View community feed post #394",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_394",
+      "boundaryCheck": 3940
+    }
+  },
+  {
+    "id": "TC-0396",
+    "category": "Login",
+    "role": "guest",
+    "action": "Attempt login with guest credentials",
+    "expectedOutcome": "Fail",
+    "testData": {
+      "inputValue": "TestInput_395",
+      "boundaryCheck": 3950
+    }
+  },
+  {
+    "id": "TC-0397",
+    "category": "Navigation",
+    "role": "admin",
+    "action": "Navigate to admin restricted area",
+    "expectedOutcome": "Success",
+    "testData": {
+      "inputValue": "TestInput_396",
+      "boundaryCheck": 3960
+    }
+  },
+  {
+    "id": "TC-0398",
+    "category": "FormValidation",
+    "role": "manager",
+    "action": "Submit form with boundary value 3970",
+    "expectedOutcome": "Validation Check",
+    "testData": {
+      "inputValue": "TestInput_397",
+      "boundaryCheck": 3970
+    }
+  },
+  {
+    "id": "TC-0399",
+    "category": "Dashboard",
+    "role": "user",
+    "action": "Load dashboard widgets for user",
+    "expectedOutcome": "Widgets Loaded",
+    "testData": {
+      "inputValue": "TestInput_398",
+      "boundaryCheck": 3980
+    }
+  },
+  {
+    "id": "TC-0400",
+    "category": "Community",
+    "role": "guest",
+    "action": "View community feed post #399",
+    "expectedOutcome": "Post Visible",
+    "testData": {
+      "inputValue": "TestInput_399",
+      "boundaryCheck": 3990
+    }
+  }
+]

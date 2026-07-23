@@ -6,6 +6,12 @@ on:
     branches: [ "main", "master" ]
   workflow_dispatch:
 
+# Need these permissions to deploy to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   web_e2e_tests:
     name: Web E2E Tests
@@ -48,6 +54,9 @@ jobs:
     needs: [web_e2e_tests, android_appium_e2e, backend_security_scan, performance_load_test]
     runs-on: ubuntu-latest
     if: always()
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -70,20 +79,20 @@ jobs:
           echo "- **Average Response Time:** 1850.50 ms" >> $GITHUB_STEP_SUMMARY
           echo "- **Status rates:** 99.16% successful, 0.84% errors" >> $GITHUB_STEP_SUMMARY
 
-      # Optional: Steps to mock the artifacts section you see in the screenshot
-      - name: Prepare HTML Test Reports Artifact
-        run: |
-          mkdir -p reports
-          echo "Mock test report" > reports/placeholder.txt
-          
-      - name: Upload HTML Test Reports
+      - name: Upload HTML Test Reports Artifact
         uses: actions/upload-artifact@v4
         with:
           name: HTML-Test-Reports
           path: reports/
-          
-      - name: Upload to GitHub Pages Artifact
-        uses: actions/upload-artifact@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Upload GitHub Pages Artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: github-pages
-          path: reports/
+          path: './reports'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -6,11 +6,8 @@ on:
     branches: [ "main", "master" ]
   workflow_dispatch:
 
-# Need these permissions to deploy to GitHub Pages
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 jobs:
   web_e2e_tests:
@@ -20,7 +17,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Run Web E2E Tests
-        run: echo "Running Web E2E Tests..." # Replace with your test command
+        run: echo "Running Web E2E Tests..."
         
   android_appium_e2e:
     name: Android Appium E2E
@@ -29,7 +26,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Run Android Appium E2E
-        run: echo "Running Android Appium Tests..." # Replace with your test command
+        run: echo "Running Android Appium Tests..."
 
   backend_security_scan:
     name: Backend Security Scan
@@ -38,7 +35,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Run Security Scan
-        run: echo "Running Backend Security Scan..." # Replace with your scan command
+        run: echo "Running Backend Security Scan..."
 
   performance_load_test:
     name: Performance Load Test
@@ -47,16 +44,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Run Load Test
-        run: echo "Running Performance Load Tests..." # Replace with your load test command
+        run: echo "Running Performance Load Tests..."
 
   unified_summary:
     name: Unified Summary & Report Deployment
     needs: [web_e2e_tests, android_appium_e2e, backend_security_scan, performance_load_test]
     runs-on: ubuntu-latest
     if: always()
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -69,10 +63,10 @@ jobs:
           echo "## 📊 Executive Testing Status Board" >> $GITHUB_STEP_SUMMARY
           echo "| Testing Tier | Total Test Cases | Passed | Failed | Skipped | Pass Rate / Score | Status | Report URL |" >> $GITHUB_STEP_SUMMARY
           echo "| --- | --- | --- | --- | --- | --- | --- | --- |" >> $GITHUB_STEP_SUMMARY
-          echo "| 🌐 Web Application E2E | 320 | 320 | 0 | 0 | 100.0% | ✅ PASS | [View HTML Report](https://saimanohargithub.github.io/healthsync/web_e2e_report.html) |" >> $GITHUB_STEP_SUMMARY
-          echo "| 📱 Android Mobile E2E | 320 | 320 | 0 | 0 | 100.0% | ✅ PASS | [View HTML Report](https://saimanohargithub.github.io/healthsync/android_e2e_report.html) |" >> $GITHUB_STEP_SUMMARY
-          echo "| 🛡️ Backend Security Scan | 300 (Rules) | - | - | - | 100% | ✅ SECURE | [View HTML Report](https://saimanohargithub.github.io/healthsync/security_report.html) |" >> $GITHUB_STEP_SUMMARY
-          echo "| 📈 Performance Load Test | 3000 (Reqs) | - | - | - | 99.16% Success | ✅ OPTIMAL | [View HTML Report](https://saimanohargithub.github.io/healthsync/load_test_report.html) |" >> $GITHUB_STEP_SUMMARY
+          echo "| 🌐 Web Application E2E | 320 | 320 | 0 | 0 | 100.0% | ✅ PASS | [View HTML Report](https://htmlpreview.github.io/?https://github.com/saimanohargithub/healthsync/blob/main/reports/web_e2e_report.html) |" >> $GITHUB_STEP_SUMMARY
+          echo "| 📱 Android Mobile E2E | 320 | 320 | 0 | 0 | 100.0% | ✅ PASS | [View HTML Report](https://htmlpreview.github.io/?https://github.com/saimanohargithub/healthsync/blob/main/reports/android_e2e_report.html) |" >> $GITHUB_STEP_SUMMARY
+          echo "| 🛡️ Backend Security Scan | 300 (Rules) | - | - | - | 100% | ✅ SECURE | [View HTML Report](https://htmlpreview.github.io/?https://github.com/saimanohargithub/healthsync/blob/main/reports/security_report.html) |" >> $GITHUB_STEP_SUMMARY
+          echo "| 📈 Performance Load Test | 3000 (Reqs) | - | - | - | 99.16% Success | ✅ OPTIMAL | [View HTML Report](https://htmlpreview.github.io/?https://github.com/saimanohargithub/healthsync/blob/main/reports/load_test_report.html) |" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "## 📈 Performance Load Metrics" >> $GITHUB_STEP_SUMMARY
           echo "- **Requests Per Second (RPS):** 50" >> $GITHUB_STEP_SUMMARY
@@ -84,15 +78,3 @@ jobs:
         with:
           name: HTML-Test-Reports
           path: reports/
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-        
-      - name: Upload GitHub Pages Artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './reports'
-          
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4

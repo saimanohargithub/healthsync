@@ -58,7 +58,7 @@ jobs:
       - name: Generate Unified Testing Status Board
         run: |
           echo "## 🚀 Live Environment" >> $GITHUB_STEP_SUMMARY
-          echo "- **Web Application:** [Click Here to Open HealthSync](https://github.com/saimanohargithub/healthsync)" >> $GITHUB_STEP_SUMMARY
+          echo "- **Web Application:** [Click Here to Open HealthSync](https://saimanohargithub.github.io/healthsync/)" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "## 📊 Executive Testing Status Board" >> $GITHUB_STEP_SUMMARY
           echo "| Testing Tier | Total Test Cases | Passed | Failed | Skipped | Pass Rate / Score | Status | Report URL |" >> $GITHUB_STEP_SUMMARY

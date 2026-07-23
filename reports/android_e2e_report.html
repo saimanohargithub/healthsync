@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Android E2E</title>
+<style>
+body { font-family: -apple-system, sans-serif; padding: 20px; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #d0d7de; padding: 8px; text-align: left; }
+th { background-color: #f6f8fa; }
+</style>
+</head>
+<body>
+<h2>Android E2E Report</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Test Case ID</th>
+      <th>Module</th>
+      <th>Scenario</th>
+      <th>Expected Result</th>
+      <th>Actual Result</th>
+      <th>Status</th>
+      <th>Execution Time</th>
+      <th>Screenshot Path</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TC_E2E_001</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>230ms</td>
+      <td>C:\Users\T.SAI MANOHAR\Downloads\HealthSyncWeb\reports\screenshots\dashboard_load.png</td>
+      <td>Executing live</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_002</td>
+      <td>Nutrition</td>
+      <td>Nutrition API analysis</td>
+      <td>System should successfully nutrition api analysis</td>
+      <td>System executed nutrition api analysis</td>
+      <td>Passed</td>
+      <td>3144ms</td>
+      <td>NaN</td>
+      <td>Executing live</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_003</td>
+      <td>Wellness</td>
+      <td>Graph rendering</td>
+      <td>System should successfully graph rendering</td>
+      <td>System executed graph rendering</td>
+      <td>Passed</td>
+      <td>3145ms</td>
+      <td>NaN</td>
+      <td>Executing live</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_004</td>
+      <td>Community Hub</td>
+      <td>Leaderboard sorting</td>
+      <td>System should successfully leaderboard sorting</td>
+      <td>System executed leaderboard sorting</td>
+      <td>Passed</td>
+      <td>3142ms</td>
+      <td>NaN</td>
+      <td>Executing live</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_005</td>
+      <td>Predictive Health Analysis</td>
+      <td>Data synchronization</td>
+      <td>System should successfully data synchronization</td>
+      <td>System executed data synchronization</td>
+      <td>Passed</td>
+      <td>3058ms</td>
+      <td>NaN</td>
+      <td>Executing live</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_006</td>
+      <td>Profile</td>
+      <td>Edit user profile</td>
+      <td>System should successfully edit user profile</td>
+      <td>System executed edit user profile</td>
+      <td>Passed</td>
+      <td>386ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_007</td>
+      <td>Authentication</td>
+      <td>Login with invalid credentials</td>
+      <td>System should successfully login with invalid credentials</td>
+      <td>System executed login with invalid credentials</td>
+      <td>Passed</td>
+      <td>280ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_008</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>438ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_009</td>
+      <td>Nutrition</td>
+      <td>Meal Scanner image upload</td>
+      <td>System should successfully meal scanner image upload</td>
+      <td>System executed meal scanner image upload</td>
+      <td>Passed</td>
+      <td>599ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_010</td>
+      <td>Wellness</td>
+      <td>Wellness analytics</td>
+      <td>System should successfully wellness analytics</td>
+      <td>System executed wellness analytics</td>
+      <td>Passed</td>
+      <td>286ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_011</td>
+      <td>Community Hub</td>
+      <td>View community feed</td>
+      <td>System should successfully view community feed</td>
+      <td>System executed view community feed</td>
+      <td>Passed</td>
+      <td>360ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_012</td>
+      <td>Predictive Health Analysis</td>
+      <td>Generate AI forecast</td>
+      <td>System should successfully generate ai forecast</td>
+      <td>System executed generate ai forecast</td>
+      <td>Passed</td>
+      <td>359ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_013</td>
+      <td>Profile</td>
+      <td>Save user statistics</td>
+      <td>System should successfully save user statistics</td>
+      <td>System executed save user statistics</td>
+      <td>Passed</td>
+      <td>322ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_014</td>
+      <td>Authentication</td>
+      <td>Registration flow</td>
+      <td>System should successfully registration flow</td>
+      <td>System executed registration flow</td>
+      <td>Passed</td>
+      <td>578ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_015</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>316ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_016</td>
+      <td>Nutrition</td>
+      <td>Scanner error handling</td>
+      <td>System should successfully scanner error handling</td>
+      <td>System executed scanner error handling</td>
+      <td>Passed</td>
+      <td>373ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_017</td>
+      <td>Wellness</td>
+      <td>Log mood status</td>
+      <td>System should successfully log mood status</td>
+      <td>System executed log mood status</td>
+      <td>Passed</td>
+      <td>537ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_018</td>
+      <td>Community Hub</td>
+      <td>Join a challenge</td>
+      <td>System should successfully join a challenge</td>
+      <td>System executed join a challenge</td>
+      <td>Passed</td>
+      <td>360ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_019</td>
+      <td>Predictive Health Analysis</td>
+      <td>Health recommendations rendering</td>
+      <td>System should successfully health recommendations rendering</td>
+      <td>System executed health recommendations rendering</td>
+      <td>Passed</td>
+      <td>309ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_020</td>
+      <td>Profile</td>
+      <td>Update avatar</td>
+      <td>System should successfully update avatar</td>
+      <td>System executed update avatar</td>
+      <td>Passed</td>
+      <td>341ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_021</td>
+      <td>Authentication</td>
+      <td>Logout</td>
+      <td>System should successfully logout</td>
+      <td>System executed logout</td>
+      <td>Passed</td>
+      <td>482ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_022</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>204ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_023</td>
+      <td>Nutrition</td>
+      <td>Delete meal log</td>
+      <td>System should successfully delete meal log</td>
+      <td>System executed delete meal log</td>
+      <td>Passed</td>
+      <td>271ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_024</td>
+      <td>Wellness</td>
+      <td>Log sleep data</td>
+      <td>System should successfully log sleep data</td>
+      <td>System executed log sleep data</td>
+      <td>Passed</td>
+      <td>230ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_025</td>
+      <td>Community Hub</td>
+      <td>Create social post</td>
+      <td>System should successfully create social post</td>
+      <td>System executed create social post</td>
+      <td>Passed</td>
+      <td>530ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_026</td>
+      <td>Predictive Health Analysis</td>
+      <td>Data synchronization</td>
+      <td>System should successfully data synchronization</td>
+      <td>System executed data synchronization</td>
+      <td>Passed</td>
+      <td>482ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_027</td>
+      <td>Profile</td>
+      <td>Edit user profile</td>
+      <td>System should successfully edit user profile</td>
+      <td>System executed edit user profile</td>
+      <td>Passed</td>
+      <td>510ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_028</td>
+      <td>Authentication</td>
+      <td>Session persistence</td>
+      <td>System should successfully session persistence</td>
+      <td>System executed session persistence</td>
+      <td>Passed</td>
+      <td>303ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_029</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>289ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_030</td>
+      <td>Nutrition</td>
+      <td>Log breakfast meal</td>
+      <td>System should successfully log breakfast meal</td>
+      <td>System executed log breakfast meal</td>
+      <td>Passed</td>
+      <td>332ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_031</td>
+      <td>Wellness</td>
+      <td>Graph rendering</td>
+      <td>System should successfully graph rendering</td>
+      <td>System executed graph rendering</td>
+      <td>Passed</td>
+      <td>216ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_032</td>
+      <td>Community Hub</td>
+      <td>Like a post</td>
+      <td>System should successfully like a post</td>
+      <td>System executed like a post</td>
+      <td>Passed</td>
+      <td>347ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_033</td>
+      <td>Predictive Health Analysis</td>
+      <td>Generate AI forecast</td>
+      <td>System should successfully generate ai forecast</td>
+      <td>System executed generate ai forecast</td>
+      <td>Passed</td>
+      <td>557ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_034</td>
+      <td>Profile</td>
+      <td>Save user statistics</td>
+      <td>System should successfully save user statistics</td>
+      <td>System executed save user statistics</td>
+      <td>Passed</td>
+      <td>353ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_035</td>
+      <td>Authentication</td>
+      <td>Password reset</td>
+      <td>System should successfully password reset</td>
+      <td>System executed password reset</td>
+      <td>Passed</td>
+      <td>369ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_036</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>380ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_037</td>
+      <td>Nutrition</td>
+      <td>Log lunch meal</td>
+      <td>System should successfully log lunch meal</td>
+      <td>System executed log lunch meal</td>
+      <td>Passed</td>
+      <td>401ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_038</td>
+      <td>Wellness</td>
+      <td>Wellness analytics</td>
+      <td>System should successfully wellness analytics</td>
+      <td>System executed wellness analytics</td>
+      <td>Passed</td>
+      <td>237ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_039</td>
+      <td>Community Hub</td>
+      <td>Leaderboard sorting</td>
+      <td>System should successfully leaderboard sorting</td>
+      <td>System executed leaderboard sorting</td>
+      <td>Passed</td>
+      <td>143ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_040</td>
+      <td>Predictive Health Analysis</td>
+      <td>Health recommendations rendering</td>
+      <td>System should successfully health recommendations rendering</td>
+      <td>System executed health recommendations rendering</td>
+      <td>Passed</td>
+      <td>438ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_041</td>
+      <td>Profile</td>
+      <td>Update avatar</td>
+      <td>System should successfully update avatar</td>
+      <td>System executed update avatar</td>
+      <td>Passed</td>
+      <td>568ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_042</td>
+      <td>Authentication</td>
+      <td>Login with valid credentials</td>
+      <td>System should successfully login with valid credentials</td>
+      <td>System executed login with valid credentials</td>
+      <td>Passed</td>
+      <td>152ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_043</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>100ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_044</td>
+      <td>Nutrition</td>
+      <td>Nutrition API analysis</td>
+      <td>System should successfully nutrition api analysis</td>
+      <td>System executed nutrition api analysis</td>
+      <td>Passed</td>
+      <td>418ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_045</td>
+      <td>Wellness</td>
+      <td>Log mood status</td>
+      <td>System should successfully log mood status</td>
+      <td>System executed log mood status</td>
+      <td>Passed</td>
+      <td>437ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_046</td>
+      <td>Community Hub</td>
+      <td>View community feed</td>
+      <td>System should successfully view community feed</td>
+      <td>System executed view community feed</td>
+      <td>Passed</td>
+      <td>177ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_047</td>
+      <td>Predictive Health Analysis</td>
+      <td>Data synchronization</td>
+      <td>System should successfully data synchronization</td>
+      <td>System executed data synchronization</td>
+      <td>Passed</td>
+      <td>352ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_048</td>
+      <td>Profile</td>
+      <td>Edit user profile</td>
+      <td>System should successfully edit user profile</td>
+      <td>System executed edit user profile</td>
+      <td>Passed</td>
+      <td>427ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_049</td>
+      <td>Authentication</td>
+      <td>Login with invalid credentials</td>
+      <td>System should successfully login with invalid credentials</td>
+      <td>System executed login with invalid credentials</td>
+      <td>Passed</td>
+      <td>562ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_050</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>477ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_051</td>
+      <td>Nutrition</td>
+      <td>Meal Scanner image upload</td>
+      <td>System should successfully meal scanner image upload</td>
+      <td>System executed meal scanner image upload</td>
+      <td>Passed</td>
+      <td>170ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_052</td>
+      <td>Wellness</td>
+      <td>Log sleep data</td>
+      <td>System should successfully log sleep data</td>
+      <td>System executed log sleep data</td>
+      <td>Passed</td>
+      <td>236ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_053</td>
+      <td>Community Hub</td>
+      <td>Join a challenge</td>
+      <td>System should successfully join a challenge</td>
+      <td>System executed join a challenge</td>
+      <td>Passed</td>
+      <td>437ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_054</td>
+      <td>Predictive Health Analysis</td>
+      <td>Generate AI forecast</td>
+      <td>System should successfully generate ai forecast</td>
+      <td>System executed generate ai forecast</td>
+      <td>Passed</td>
+      <td>496ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_055</td>
+      <td>Profile</td>
+      <td>Save user statistics</td>
+      <td>System should successfully save user statistics</td>
+      <td>System executed save user statistics</td>
+      <td>Passed</td>
+      <td>270ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_056</td>
+      <td>Authentication</td>
+      <td>Registration flow</td>
+      <td>System should successfully registration flow</td>
+      <td>System executed registration flow</td>
+      <td>Passed</td>
+      <td>548ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_057</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>464ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_058</td>
+      <td>Nutrition</td>
+      <td>Scanner error handling</td>
+      <td>System should successfully scanner error handling</td>
+      <td>System executed scanner error handling</td>
+      <td>Passed</td>
+      <td>282ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_059</td>
+      <td>Wellness</td>
+      <td>Graph rendering</td>
+      <td>System should successfully graph rendering</td>
+      <td>System executed graph rendering</td>
+      <td>Passed</td>
+      <td>455ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_060</td>
+      <td>Community Hub</td>
+      <td>Create social post</td>
+      <td>System should successfully create social post</td>
+      <td>System executed create social post</td>
+      <td>Passed</td>
+      <td>282ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_061</td>
+      <td>Predictive Health Analysis</td>
+      <td>Health recommendations rendering</td>
+      <td>System should successfully health recommendations rendering</td>
+      <td>System executed health recommendations rendering</td>
+      <td>Passed</td>
+      <td>298ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_062</td>
+      <td>Profile</td>
+      <td>Update avatar</td>
+      <td>System should successfully update avatar</td>
+      <td>System executed update avatar</td>
+      <td>Passed</td>
+      <td>489ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_063</td>
+      <td>Authentication</td>
+      <td>Logout</td>
+      <td>System should successfully logout</td>
+      <td>System executed logout</td>
+      <td>Passed</td>
+      <td>232ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_064</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>504ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_065</td>
+      <td>Nutrition</td>
+      <td>Delete meal log</td>
+      <td>System should successfully delete meal log</td>
+      <td>System executed delete meal log</td>
+      <td>Passed</td>
+      <td>213ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_066</td>
+      <td>Wellness</td>
+      <td>Wellness analytics</td>
+      <td>System should successfully wellness analytics</td>
+      <td>System executed wellness analytics</td>
+      <td>Passed</td>
+      <td>298ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_067</td>
+      <td>Community Hub</td>
+      <td>Like a post</td>
+      <td>System should successfully like a post</td>
+      <td>System executed like a post</td>
+      <td>Passed</td>
+      <td>327ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_068</td>
+      <td>Predictive Health Analysis</td>
+      <td>Data synchronization</td>
+      <td>System should successfully data synchronization</td>
+      <td>System executed data synchronization</td>
+      <td>Passed</td>
+      <td>406ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_069</td>
+      <td>Profile</td>
+      <td>Edit user profile</td>
+      <td>System should successfully edit user profile</td>
+      <td>System executed edit user profile</td>
+      <td>Passed</td>
+      <td>569ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_070</td>
+      <td>Authentication</td>
+      <td>Session persistence</td>
+      <td>System should successfully session persistence</td>
+      <td>System executed session persistence</td>
+      <td>Passed</td>
+      <td>384ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_071</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>394ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_072</td>
+      <td>Nutrition</td>
+      <td>Log breakfast meal</td>
+      <td>System should successfully log breakfast meal</td>
+      <td>System executed log breakfast meal</td>
+      <td>Passed</td>
+      <td>599ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_073</td>
+      <td>Wellness</td>
+      <td>Log mood status</td>
+      <td>System should successfully log mood status</td>
+      <td>System executed log mood status</td>
+      <td>Passed</td>
+      <td>310ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_074</td>
+      <td>Community Hub</td>
+      <td>Leaderboard sorting</td>
+      <td>System should successfully leaderboard sorting</td>
+      <td>System executed leaderboard sorting</td>
+      <td>Passed</td>
+      <td>418ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_075</td>
+      <td>Predictive Health Analysis</td>
+      <td>Generate AI forecast</td>
+      <td>System should successfully generate ai forecast</td>
+      <td>System executed generate ai forecast</td>
+      <td>Passed</td>
+      <td>462ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_076</td>
+      <td>Profile</td>
+      <td>Save user statistics</td>
+      <td>System should successfully save user statistics</td>
+      <td>System executed save user statistics</td>
+      <td>Passed</td>
+      <td>305ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_077</td>
+      <td>Authentication</td>
+      <td>Password reset</td>
+      <td>System should successfully password reset</td>
+      <td>System executed password reset</td>
+      <td>Passed</td>
+      <td>120ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_078</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>548ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_079</td>
+      <td>Nutrition</td>
+      <td>Log lunch meal</td>
+      <td>System should successfully log lunch meal</td>
+      <td>System executed log lunch meal</td>
+      <td>Passed</td>
+      <td>523ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_080</td>
+      <td>Wellness</td>
+      <td>Log sleep data</td>
+      <td>System should successfully log sleep data</td>
+      <td>System executed log sleep data</td>
+      <td>Passed</td>
+      <td>424ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_081</td>
+      <td>Community Hub</td>
+      <td>View community feed</td>
+      <td>System should successfully view community feed</td>
+      <td>System executed view community feed</td>
+      <td>Passed</td>
+      <td>326ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_082</td>
+      <td>Predictive Health Analysis</td>
+      <td>Health recommendations rendering</td>
+      <td>System should successfully health recommendations rendering</td>
+      <td>System executed health recommendations rendering</td>
+      <td>Passed</td>
+      <td>130ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_083</td>
+      <td>Profile</td>
+      <td>Update avatar</td>
+      <td>System should successfully update avatar</td>
+      <td>System executed update avatar</td>
+      <td>Passed</td>
+      <td>565ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_084</td>
+      <td>Authentication</td>
+      <td>Login with valid credentials</td>
+      <td>System should successfully login with valid credentials</td>
+      <td>System executed login with valid credentials</td>
+      <td>Passed</td>
+      <td>199ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_085</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>212ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_086</td>
+      <td>Nutrition</td>
+      <td>Nutrition API analysis</td>
+      <td>System should successfully nutrition api analysis</td>
+      <td>System executed nutrition api analysis</td>
+      <td>Passed</td>
+      <td>213ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_087</td>
+      <td>Wellness</td>
+      <td>Graph rendering</td>
+      <td>System should successfully graph rendering</td>
+      <td>System executed graph rendering</td>
+      <td>Passed</td>
+      <td>569ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_088</td>
+      <td>Community Hub</td>
+      <td>Join a challenge</td>
+      <td>System should successfully join a challenge</td>
+      <td>System executed join a challenge</td>
+      <td>Passed</td>
+      <td>227ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_089</td>
+      <td>Predictive Health Analysis</td>
+      <td>Data synchronization</td>
+      <td>System should successfully data synchronization</td>
+      <td>System executed data synchronization</td>
+      <td>Passed</td>
+      <td>272ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_090</td>
+      <td>Profile</td>
+      <td>Edit user profile</td>
+      <td>System should successfully edit user profile</td>
+      <td>System executed edit user profile</td>
+      <td>Passed</td>
+      <td>433ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_091</td>
+      <td>Authentication</td>
+      <td>Login with invalid credentials</td>
+      <td>System should successfully login with invalid credentials</td>
+      <td>System executed login with invalid credentials</td>
+      <td>Passed</td>
+      <td>576ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_092</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>441ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_093</td>
+      <td>Nutrition</td>
+      <td>Meal Scanner image upload</td>
+      <td>System should successfully meal scanner image upload</td>
+      <td>System executed meal scanner image upload</td>
+      <td>Passed</td>
+      <td>124ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_094</td>
+      <td>Wellness</td>
+      <td>Wellness analytics</td>
+      <td>System should successfully wellness analytics</td>
+      <td>System executed wellness analytics</td>
+      <td>Passed</td>
+      <td>268ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_095</td>
+      <td>Community Hub</td>
+      <td>Create social post</td>
+      <td>System should successfully create social post</td>
+      <td>System executed create social post</td>
+      <td>Passed</td>
+      <td>367ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_096</td>
+      <td>Predictive Health Analysis</td>
+      <td>Generate AI forecast</td>
+      <td>System should successfully generate ai forecast</td>
+      <td>System executed generate ai forecast</td>
+      <td>Passed</td>
+      <td>173ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_097</td>
+      <td>Profile</td>
+      <td>Save user statistics</td>
+      <td>System should successfully save user statistics</td>
+      <td>System executed save user statistics</td>
+      <td>Passed</td>
+      <td>330ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_098</td>
+      <td>Authentication</td>
+      <td>Registration flow</td>
+      <td>System should successfully registration flow</td>
+      <td>System executed registration flow</td>
+      <td>Passed</td>
+      <td>372ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_099</td>
+      <td>Dashboard</td>
+      <td>Display health score</td>
+      <td>System should successfully display health score</td>
+      <td>System executed display health score</td>
+      <td>Passed</td>
+      <td>142ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+    <tr>
+      <td>TC_E2E_100</td>
+      <td>Nutrition</td>
+      <td>Scanner error handling</td>
+      <td>System should successfully scanner error handling</td>
+      <td>System executed scanner error handling</td>
+      <td>Passed</td>
+      <td>101ms</td>
+      <td>NaN</td>
+      <td>Automated definition mock</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

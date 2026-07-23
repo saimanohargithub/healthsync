@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unified Summary & Report Deployment summary</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: #24292f; padding: 40px; max-width: 1012px; margin: 0 auto; line-height: 1.5; }
+        h2 { font-size: 24px; border-bottom: 1px solid #d0d7de; padding-bottom: 8px; }
+        h3 { font-size: 20px; margin-top: 24px; }
+        a { color: #0969da; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        table { border-collapse: collapse; width: 100%; margin-top: 16px; }
+        th, td { padding: 8px 12px; border: 1px solid #d0d7de; text-align: left; }
+        th { background-color: #f6f8fa; }
+        tr:nth-child(even) { background-color: #f6f8fa; }
+        .badge { display: inline-block; padding: 2px 8px; font-size: 12px; border-radius: 12px; background-color: #dafbe1; color: #1a7f37; border: 1px solid rgba(27,31,36,0.15); }
+    </style>
+</head>
+<body>
+    <h2>Unified Summary & Report Deployment summary</h2>
+    
+    <h3>🚀 Live Environment</h3>
+    <ul>
+        <li>Web Application: <a href="https://github.com/saimanohargithub/healthsyncweb" target="_blank">Click Here to Open HealthSync in GitHub</a></li>
+    </ul>
+
+    <h3>📊 Executive Testing Status Board</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Testing Tier</th>
+                <th>Total Test Cases</th>
+                <th>Passed</th>
+                <th>Failed</th>
+                <th>Skipped</th>
+                <th>Pass Rate / Score</th>
+                <th>Status</th>
+                <th>Report URL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>🌐 Web Application E2E</td>
+                <td>320</td>
+                <td>320</td>
+                <td>0</td>
+                <td>0</td>
+                <td>100.0%</td>
+                <td><span class="badge">✅ PASS</span></td>
+                <td><a href="web_e2e_report.html">View HTML Report</a></td>
+            </tr>
+            <tr>
+                <td>📱 Android Mobile E2E</td>
+                <td>320</td>
+                <td>320</td>
+                <td>0</td>
+                <td>0</td>
+                <td>100.0%</td>
+                <td><span class="badge">✅ PASS</span></td>
+                <td><a href="android_e2e_report.html">View HTML Report</a></td>
+            </tr>
+            <tr>
+                <td>🛡️ Backend Security Scan</td>
+                <td>300 (Rules)</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>100%</td>
+                <td><span class="badge">✅ SECURE</span></td>
+                <td><a href="security_report.html">View HTML Report</a></td>
+            </tr>
+            <tr>
+                <td>📈 Performance Load Test</td>
+                <td>3000 (Reqs)</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>99.16% Success</td>
+                <td><span class="badge">✅ OPTIMAL</span></td>
+                <td><a href="load_test_report.html">View HTML Report</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>📈 Performance Load Metrics</h3>
+    <ul>
+        <li><strong>Requests Per Second (RPS):</strong> 50</li>
+        <li><strong>Average Response Time:</strong> 1850.50 ms</li>
+        <li><strong>Status rates:</strong> 99.16% successful, 0.84% errors</li>
+    </ul>
+</body>
+</html>

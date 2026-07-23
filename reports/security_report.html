@@ -1,0 +1,3332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SecurityTest_Report</title>
+<style>
+body { font-family: -apple-system, sans-serif; padding: 20px; }
+table { border-collapse: collapse; width: 100%; }
+th, td { border: 1px solid #d0d7de; padding: 8px; text-align: left; }
+th { background-color: #f6f8fa; }
+</style>
+</head>
+<body>
+<h2>SecurityTest_Report</h2>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Rule ID</th>
+      <th>Category</th>
+      <th>CWE/OWASP Reference</th>
+      <th>Security Policy/Rule Description</th>
+      <th>Target Component/Code Path</th>
+      <th>Validation Check Steps</th>
+      <th>Expected Secure Outcome</th>
+      <th>Status</th>
+      <th>Severity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SEC-RULE-001</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-002</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-003</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-004</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-005</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-006</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-007</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-008</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-009</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-010</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-011</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-012</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-013</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-014</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-015</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-016</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-017</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-018</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-019</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-020</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-021</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-022</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-023</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-024</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-025</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-026</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-027</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-028</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-029</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-030</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-031</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-032</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-033</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-034</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-035</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-036</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-037</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-038</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-039</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-040</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-041</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-042</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-043</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-044</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-045</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-046</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-047</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-048</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-049</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-050</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-051</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-052</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-053</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-054</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-055</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-056</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-057</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-058</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-059</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-060</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-061</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-062</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-063</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-064</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-065</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-066</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-067</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-068</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-069</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-070</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-071</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-072</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-073</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-074</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-075</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-076</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-077</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-078</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-079</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-080</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-081</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-082</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-083</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-084</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-085</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-086</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-087</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-088</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-089</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-090</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-091</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-092</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-093</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-094</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-095</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-096</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-097</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-098</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-099</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-100</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-101</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-102</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-103</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-104</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-105</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-106</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-107</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-108</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-109</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-110</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-111</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-112</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-113</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-114</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-115</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-116</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-117</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-118</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-119</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-120</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-121</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-122</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-123</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-124</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-125</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-126</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-127</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-128</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-129</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-130</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-131</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-132</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-133</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-134</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-135</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-136</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-137</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-138</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-139</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-140</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-141</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-142</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-143</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-144</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-145</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-146</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-147</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-148</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-149</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-150</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-151</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-152</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-153</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-154</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-155</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-156</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-157</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-158</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-159</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-160</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-161</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-162</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-163</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-164</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-165</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-166</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-167</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-168</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-169</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-170</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-171</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-172</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-173</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-174</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-175</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-176</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-177</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-178</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-179</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-180</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-181</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-182</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-183</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-184</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-185</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-186</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-187</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-188</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-189</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-190</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-191</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-192</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-193</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-194</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-195</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-196</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-197</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-198</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-199</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-200</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-201</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-202</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-203</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-204</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-205</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-206</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-207</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-208</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-209</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-210</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-211</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-212</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-213</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-214</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-215</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-216</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-217</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-218</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-219</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-220</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-221</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-222</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-223</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-224</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-225</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-226</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-227</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-228</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-229</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-230</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-231</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-232</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-233</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-234</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-235</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-236</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-237</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-238</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-239</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-240</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-241</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-242</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-243</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-244</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-245</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-246</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-247</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-248</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-249</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-250</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-251</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-252</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-253</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-254</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-255</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-256</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-257</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-258</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-259</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-260</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-261</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-262</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-263</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-264</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-265</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-266</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-267</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-268</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-269</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-270</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-271</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-272</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-273</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-274</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-275</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-276</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-277</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-278</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-279</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-280</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-281</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-282</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-283</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-284</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-285</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-286</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-287</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-288</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-289</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-290</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-291</td>
+      <td>Authorization</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authorization controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authorization. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authorization.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-292</td>
+      <td>Session Management</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Session Management controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Session Management. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Session Management.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-293</td>
+      <td>Input Validation</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Input Validation controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Input Validation. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Input Validation.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-294</td>
+      <td>Output Encoding</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Output Encoding controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Output Encoding. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Output Encoding.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-295</td>
+      <td>Cryptography</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Cryptography controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Cryptography. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Cryptography.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-296</td>
+      <td>Error Handling</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Error Handling controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Error Handling. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Error Handling.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-297</td>
+      <td>Data Protection</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Data Protection controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Data Protection. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Data Protection.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-298</td>
+      <td>Business Logic</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Business Logic controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Business Logic. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Business Logic.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-299</td>
+      <td>API Security</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for API Security controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for API Security. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to API Security.</td>
+      <td>Pending</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>SEC-RULE-300</td>
+      <td>Authentication</td>
+      <td>OWASP Top 10</td>
+      <td>Ensure secure implementation and configuration for Authentication controls.</td>
+      <td>Generic / All Endpoints</td>
+      <td>1. Identify entry points for Authentication. 2. Provide generic validation payload. 3. Monitor response.</td>
+      <td>The system securely processes the request without executing unauthorized actions or leaking data related to Authentication.</td>
+      <td>Pending</td>
+      <td>High</td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
